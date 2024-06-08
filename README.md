@@ -14,7 +14,21 @@ The desktop app also provides the `docker` command-line utility, located at `/us
 
 ### Linux
 
-TBD
+On Ubuntu, you can install Docker from the Ubuntu repository with
+```bash
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+Another option is following the instructions in [Docker
+documentation](https://docs.docker.com/engine/install/ubuntu/) to install Docker
+Engine from Docker's repository. It is also advisable to run docker as a
+regular user. Hence, you need to add your user to the `docker` group. You can
+achieve this by
+```bash
+sudo usermod -aG docker $USER
+newgrp docker
+```
 
 ### Windows
 
@@ -22,7 +36,7 @@ TBD
 
 ## Building the Image
 
-Run the following command from instide the `ubuntu-mpc` folder:
+Run the following command from inside the `ubuntu-mpc` folder:
 ```
 docker build --no-cache -t ubuntu-mpc:latest .
 ```
