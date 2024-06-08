@@ -22,6 +22,7 @@ TBD
 
 ## Building the Image
 
+Run the following command from instide the `ubuntu-mpc` folder:
 ```
 docker build --no-cache -t ubuntu-mpc:latest .
 ```
