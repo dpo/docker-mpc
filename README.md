@@ -20,11 +20,10 @@ sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
-Another option is following the instructions in [Docker
-documentation](https://docs.docker.com/engine/install/ubuntu/) to install Docker
-Engine from Docker's repository. It is also advisable to run docker as a
-regular user. Hence, you need to add your user to the `docker` group. You can
-achieve this by
+Another option is to follow the instructions in the [Docker documentation](https://docs.docker.com/engine/install/ubuntu/) to install Docker Engine from the Docker repository.
+It is also advisable to run Docker as a regular user.
+Hence, you need to add your user to the `docker` group.
+You can achieve this by
 ```bash
 sudo usermod -aG docker $USER
 newgrp docker
